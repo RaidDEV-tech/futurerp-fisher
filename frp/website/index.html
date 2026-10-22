@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0714"><title>FutureRP Fisher — De toekomst van vissen</title>
+<meta name="description" content="FutureRP Fisher: jouw visassistent voor Future roleplay. Simpel, snel en apparaatgebonden.">
+<style>
+:root{color-scheme:dark;--bg:#0d0714;--s:#171022;--s2:#1f1530;--l:#2a1c40;--t:#f3eefb;--m:#9a8bb5;--r:#f43f5e;--p:#8b5cf6;--gr:linear-gradient(90deg,#f43f5e,#8b5cf6)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse 60% 40% at 80% 0,#8b5cf633,transparent),radial-gradient(ellipse 50% 30% at 10% 10%,#f43f5e22,transparent),var(--bg);color:var(--t);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.sh{width:min(1100px,calc(100% - 40px));margin:auto}
+.top{display:flex;align-items:center;justify-content:space-between;min-height:74px;border-bottom:1px solid #ffffff12}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}.mk{width:36px;height:36px;border-radius:11px;background:var(--gr);display:grid;place-items:center}
+.brand small{display:block;font-size:.62rem;color:var(--m);letter-spacing:.18em;line-height:1}
+nav{display:flex;gap:26px;align-items:center}nav a{color:var(--m);font-size:.92rem;font-weight:600;transition:.15s}nav a:hover{color:var(--t)}
+.btn{display:inline-block;background:var(--gr);color:#fff;font-weight:700;padding:13px 26px;border-radius:12px;box-shadow:0 10px 34px #f43f5e33;transition:.15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.o{background:none;border:1px solid var(--l);box-shadow:none}.btn.o:hover{border-color:var(--p)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:80px 0 90px}
+.eb{color:var(--r);font-size:.78rem;font-weight:800;letter-spacing:.16em;margin-bottom:16px}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.05;letter-spacing:-.025em}h1 em{font-style:normal;background:var(--gr);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--m);font-size:1.15rem;margin:20px 0 30px;max-width:440px}.cta{display:flex;gap:12px;flex-wrap:wrap}.meta{color:var(--m);font-size:.85rem;margin-top:18px}
+.win{background:var(--s);border:1px solid var(--l);border-radius:16px;overflow:hidden;box-shadow:0 40px 90px #000a,0 0 80px #8b5cf622}
+.wb{display:flex;justify-content:space-between;padding:10px 14px;background:var(--s2);color:var(--m);font-size:.78rem;border-bottom:1px solid var(--l)}
+.wc{padding:20px}.wc .k{font-size:.68rem;letter-spacing:.14em;color:var(--m)}.wc h3{font-size:1.5rem;margin:2px 0 14px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.bx{background:var(--bg);border:1px solid var(--l);border-radius:12px;padding:12px}.bx b{display:block;color:var(--r)}
+.hb{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:.85rem;color:var(--m)}.hb span:first-child{width:56px}.hb i{font-style:normal;width:30px;height:30px;border-radius:8px;border:1px solid var(--l);display:grid;place-items:center;background:var(--bg)}.hb i.on{background:var(--gr);color:#fff;border:0}
+.bar{height:8px;border-radius:8px;background:var(--bg);margin-top:14px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--gr);animation:f 5s infinite}@keyframes f{0%,15%{width:0}50%,90%{width:100%}100%{width:0}}
+section{padding:80px 0}.sec{text-align:center;margin-bottom:44px}.sec h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.cd{background:var(--s);border:1px solid var(--l);border-radius:16px;padding:24px;transition:.2s}.cd:hover{border-color:var(--p);transform:translateY(-3px)}
+.cd .ic{font-size:26px}.cd h3{margin:8px 0 4px;font-size:1.05rem}.cd p{color:var(--m);font-size:.92rem}
+.st .n{font-size:.8rem;font-weight:800;letter-spacing:.14em;color:var(--r)}
+.dl{background:linear-gradient(135deg,#f43f5e1f,#8b5cf61f);border:1px solid var(--l);border-radius:22px;padding:54px 24px;text-align:center}
+.dl ol{list-style:none;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:26px 0;color:var(--m)}.dl ol li{background:var(--s);border:1px solid var(--l);border-radius:12px;padding:10px 16px}.dl ol b{color:var(--t)}
+.pr{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:760px;margin:auto}.pr .cd{text-align:center}.pr .cd b{font-size:1.7rem;display:block;margin:6px 0}
+details{background:var(--s);border:1px solid var(--l);border-radius:12px;padding:16px 20px;margin:0 auto 10px;max-width:740px}summary{cursor:pointer;font-weight:600}details p{color:var(--m);margin-top:10px;font-size:.95rem}
+footer{border-top:1px solid #ffffff12;padding:34px 0;color:var(--m);font-size:.85rem}footer .sh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer nav{gap:18px}
+@media(max-width:820px){.hero{grid-template-columns:1fr;padding:50px 0}nav a:not(.btn){display:none}}
+</style></head><body>
+<a href="#main" style="position:absolute;left:-999px">Ga naar inhoud</a>
+<div class="sh"><header class="top"><a class="brand" href="#"><span class="mk">🎣</span><span>FutureRP Fisher<small>VISASSISTENT</small></span></a>
+<nav><a href="#main">Loader</a><a href="#functies">Functies</a><a href="#downloads">Downloads</a><a href="#faq">FAQ</a><a href="#licenties">Licenties</a><a class="btn" style="padding:9px 18px;color:#fff" href="#downloads">Download ↓</a></nav></header></div>
+
+<main id="main"><div class="sh"><div class="hero"><div>
+  <div class="eb">GEMAAKT VOOR FUTURE ROLEPLAY</div>
+  <h1>De toekomst van <em>vissen.</em></h1>
+  <p class="lead">Je visassistent voor Future. Ziet de groene balk en begint direct te trekken. Simpel, snel en helemaal jouw setup.</p>
+  <div class="cta"><a class="btn" href="#downloads">Download ↓</a><a class="btn o" href="#licenties">Key kopen ↗</a></div>
+  <p class="meta">Windows x64 · Apparaatgebonden · Nederlandse interface</p></div>
+  <div class="win"><div class="wb"><span>FUTURERP / VISASSISTENT</span><span>−&nbsp;&nbsp;×</span></div><div class="wc">
+    <div class="k">JOUW WERKRUIMTE</div><h3>Dashboard</h3>
+    <div class="g2"><div class="bx"><span class="k">LICENTIE</span><b>Online</b><small style="color:var(--m)">Gekoppeld</small></div><div class="bx"><span class="k">BEDIENING</span><b>F6 / F7</b><small style="color:var(--m)">Start / stop</small></div></div>
+    <div class="k">JOUW HOTBAR</div>
+    <div class="hb"><span>Hengel</span><i class="on">1</i><i>2</i><i>3</i><i>4</i><i>5</i></div>
+    <div class="hb"><span>Aas</span><i>1</i><i class="on">2</i><i>3</i><i>4</i><i>5</i></div>
+    <div class="bar"><i></i></div></div></div></div></div>
+
+<section id="functies"><div class="sh"><div class="sec"><div class="eb">FUNCTIES</div><h2>Alles wat je nodig hebt.</h2></div><div class="grid">
+<div class="cd"><div class="ic">🟣</div><h3>Balk-detectie</h3><p>Zodra de groene balk midden op je scherm verschijnt, begint hij meteen te trekken.</p></div>
+<div class="cd"><div class="ic">🎛️</div><h3>Jouw hotbar</h3><p>Kies zelf op welk slot je hengel en aas zitten en stel de timing in.</p></div>
+<div class="cd"><div class="ic">📱</div><h3>Afstandsbediening</h3><p>Bekijk en bestuur je eigen pc vanaf je telefoon, met joystick, toetsen en een quit-knop.</p></div>
+<div class="cd"><div class="ic">🔒</div><h3>Apparaatgebonden</h3><p>Eén key werkt op één apparaat. Delen met anderen werkt niet.</p></div>
+<div class="cd"><div class="ic">⌨️</div><h3>Hotkeys</h3><p>F6 start of stopt, F7 is de noodstop. Werkt ook als je game op de voorgrond staat.</p></div>
+<div class="cd"><div class="ic">🪶</div><h3>Licht</h3><p>Eén .exe, geen installatie en geen drivers.</p></div></div></div></section>
+
+<section><div class="sh"><div class="sec"><div class="eb">ZO WERKT HET</div><h2>In drie stappen klaar.</h2></div><div class="grid st">
+<div class="cd"><div class="n">01</div><h3>Activeren</h3><p>Vul je key in. Die wordt gekoppeld aan jouw pc.</p></div>
+<div class="cd"><div class="n">02</div><h3>Instellen</h3><p>Jouw hotbar, zoekgebied en timing.</p></div>
+<div class="cd"><div class="n">03</div><h3>Vissen</h3><p>Druk op F6 en laat de assistent het werk doen.</p></div></div></div></section>
+
+<section id="downloads"><div class="sh"><div class="dl"><div class="eb">DOWNLOAD</div><h2>Begin met de loader.</h2>
+<ol><li><b>1</b> Open de loader</li><li><b>2</b> Activeer je licentie</li><li><b>3</b> Druk op F6</li></ol>
+<a class="btn" id="dl" href="#">Download voor Windows ↓</a></div></div></section>
+
+<section id="licenties"><div class="sh"><div class="sec"><div class="eb">LICENTIES</div><h2>Kies je licentie.</h2></div><div class="pr">
+<div class="cd"><span style="color:var(--m)">Week</span><b>—</b><p>7 dagen toegang</p></div>
+<div class="cd" style="border-color:var(--p)"><span style="color:var(--m)">Maand</span><b>—</b><p>30 dagen toegang</p></div>
+<div class="cd"><span style="color:var(--m)">Lifetime</span><b>—</b><p>Nooit verlopen</p></div></div>
+<p style="text-align:center;margin-top:26px"><a class="btn" id="buy" href="#">Key kopen ↗</a></p></div></section>
+
+<section id="faq"><div class="sh"><div class="sec"><div class="eb">FAQ</div><h2>Veelgestelde vragen.</h2></div>
+<details><summary>Kan ik mijn key met een vriend delen?</summary><p>Nee. Een key wordt bij de eerste activatie aan jouw apparaat gekoppeld. Nieuwe pc? Vraag een reset aan.</p></details>
+<details><summary>De balk wordt niet herkend.</summary><p>Zet Future in venstermodus zonder rand. Gebruik daarna “Test detectie” en verschuif het zoekgebied tot het oplicht.</p></details>
+<details><summary>Hoe werkt de afstandsbediening?</summary><p>Zet hem aan in de app, open de remote-pagina op je telefoon en vul de code in. Staat hij uit, dan kan niemand meekijken. Alleen jij ziet de code op je eigen pc.</p></details>
+<details><summary>Windows of mijn antivirus waarschuwt me.</summary><p>Macro’s die toetsen simuleren worden vaak gemarkeerd omdat de app niet digitaal is ondertekend. Kies “Toch uitvoeren” of voeg een uitzondering toe.</p></details>
+</div></section></main>
+
+<footer><div class="sh"><div><b>FutureRP Fisher</b><br>De toekomst van vissen.</div><nav><a href="#" id="dc">Discord ↗</a><a href="#faq">FAQ</a><a href="#licenties">Licenties</a></nav></div></footer>
+<script>
+// Pas aan: waar de exe staat en waar mensen een key kunnen kopen
+const DOWNLOAD_URL = 'https://github.com/JOUW_GITHUB_NAAM/futurerp-fisher/releases/latest/download/FutureRP-Fisher-Setup.exe';
+const CONTACT_URL = '#';
+document.getElementById('dl').href = DOWNLOAD_URL;
+document.getElementById('buy').href = CONTACT_URL; document.getElementById('dc').href = CONTACT_URL;
+</script></body></html>

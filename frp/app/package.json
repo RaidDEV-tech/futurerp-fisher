@@ -1,0 +1,56 @@
+{
+  "name": "autofish",
+  "version": "3.0.0",
+  "description": "FutureRP Fisher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "release": "electron-builder --win --x64 --publish always"
+  },
+  "build": {
+    "appId": "nl.futurerp.fisher",
+    "productName": "FutureRP Fisher",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "FutureRP-Fisher-Setup.exe"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "config.json",
+      "src/**/*"
+    ],
+    "asar": true,
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "runAfterFinish": true
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "JOUW_GITHUB_NAAM",
+        "repo": "futurerp-fisher"
+      }
+    ]
+  },
+  "dependencies": {
+    "ws": "^8.17.0",
+    "electron-updater": "^6.3.9"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  }
+}
